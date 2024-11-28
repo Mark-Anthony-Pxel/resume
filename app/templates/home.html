@@ -1,0 +1,252 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'support/head.html' %}
+    <style>
+        header{
+            background-image: url("{% static 'images/unnamed.jpg' %}")
+        }
+        .hero {
+    background-size: cover;
+    background-position: center;
+}
+body {
+        position: relative;
+        overflow-x: hidden;
+        background-color: #f7f7f7; /* Default light background */
+    }
+
+    /* Add background shapes */
+    .background-shapes {
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+
+    .background-shapes svg {
+        position: absolute;
+        opacity: 0.3;
+    }
+
+    /* Positioning Shapes */
+    .shape1 {
+        top: -250px;
+        left: -160px;
+    }
+
+    .shape2 {
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    .shape3 {
+        bottom: -100px;
+        right: -50px;
+    }
+
+    .shape4 {
+        bottom: 10%;
+        left: 5%;
+    }
+
+    </style>
+    
+</head>
+
+<body>
+    <div class="background-shapes">
+        <svg class="shape1" width="600" height="600" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50" fill="#ff6f61" />
+        </svg>
+        <svg class="shape2" width="200" height="200" viewBox="0 0 100 100">
+            <polygon points="50,0 100,100 0,100" fill="#6a5acd" />
+        </svg>
+        <svg class="shape4" width="250" height="250" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50" fill="#f0ad4e" />
+        </svg>
+        
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mark Anthony Ocampos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#objectives">Objectives</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center text-light lazyload" style="height: 100vh;">
+        <div class="container d-flex justify-content-center align-items-center h-100">
+            <div>
+                <h1 class="display-4">Mark Anthony Ocampos</h1>
+                <p class="lead">Front-End Web Developer | HTML | CSS | JavaScript | Web Design</p>
+                <a href="#skills" class="btn btn-primary btn-lg">View My Skills</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Skills</h2>
+            <p>Technologies I am proficient in:</p>
+            <div class="row">
+                <!-- HTML -->
+                <div class="col-md-4 skills-icons mt-5">
+                    <img width="100px" class="lazyload" src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML Logo">
+                    <br>
+                    <small>HTML</small>
+                </div>
+                
+                <!-- CSS -->
+                <div class="col-md-4 skills-icons mt-5">
+                    <img width="100px" class="lazyload" src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS Logo">
+                    <br>
+                    <small>CSS</small>
+                </div>
+    
+                <!-- JavaScript -->
+                <div class="col-md-4 skills-icons mt-5">
+                    <img width="100px" class="lazyload" src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="JavaScript Logo">
+                    <br>
+                    <small>JavaScript</small>
+                </div>
+    
+                <!-- Python -->
+                <div class="col-md-4 skills-icons mt-5">
+                    <img width="100px" class="lazyload" src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python Logo">
+                    <br>
+                    <small>Python</small>
+                </div>
+    
+                <!-- Django -->
+                <div class="col-md-4 skills-icons mt-5">
+                    <img width="150px" src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" alt="Django Logo">
+                    <br>
+                    <small>Django</small>
+                </div>
+    
+                <!-- Bootstrap -->
+                <div class="col-md-4 skills-icons mt-5">
+                    <img width="100px" class="lazyload" src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" alt="Bootstrap Logo">
+                    <br>
+                    <small>Bootstrap</small>
+                </div>
+    
+                <!-- Git -->
+                <div class="col-md-4 skills-icons mt-5">
+                    <img width="100px" class="lazyload" src="https://cdn.worldvectorlogo.com/logos/github-icon.svg" alt="Git Logo">
+                    <br>
+                    <small>Github</small>
+                </div>
+    
+                <!-- React.js -->
+                <div class="col-md-4 skills-icons mt-5">
+                    <img width="100px" class="lazyload" src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React.js Logo">
+                    <br>
+                    <small>React.js</small>
+                </div>
+                <div class="col-md-4 skills-icons mt-5">
+                    <img width="100px" class="lazyload" src="https://cdn.worldvectorlogo.com/logos/lightroom-cc.svg" alt="Lightroom Logo">
+                    <br>
+                    <small>Light Room</small>
+                </div>
+                <div class="col-md-4 skills-icons mt-5">
+                    <img width="100px" class="lazyload" src="https://cdn.worldvectorlogo.com/logos/git.svg" alt="Lightroom Logo">
+                    <br>
+                    <small>Light Room</small>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 container">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><strong>Front-End Web Developer | FOTOBOSS</strong></h3>
+                    <p>May 2022 - August 2023 | Seoul, Korea</p>
+                    <ul>
+                        <li>Designed and implemented responsive website interfaces for mobile, desktop, and tablets.</li>
+                        <li>Utilized HTML5, CSS3, and object-oriented JavaScript to create dynamic web applications.</li>
+                        <li>Led project and web strategic planning for a collaborative team environment.</li>
+                        <li>Developed frameworks to enhance functionality and performance.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Objectives Section -->
+<section id="objectives" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Objectives</h2>
+        <p class="text-center">
+            To leverage my technical skills in front-end web development to create visually appealing, user-friendly, and responsive websites that enhance user experiences. 
+            I aim to contribute to innovative projects and collaborate with teams to deliver high-quality web solutions, while continuously expanding my expertise in cutting-edge technologies.
+        </p>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:markocampos.mail@gmail.com">markocampos.mail@gmail.com</a></p>
+            <div>
+                <a href="https://github.com/Mark-Anthony-Pxel/" class="btn btn-outline-dark btn-lg">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.instagram.com/mark_photos101/" class="btn btn-outline-dark btn-lg">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>    
+
+</body>
+</html>
